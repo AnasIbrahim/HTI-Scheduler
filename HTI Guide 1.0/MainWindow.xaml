@@ -1,0 +1,113 @@
+﻿<Window x:Class="HTI_Guide_1._0.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="HTI Guide 1.0" Height="627.943" Width="1009.43" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF4B82A8" Offset="0.974"/>
+            <GradientStop Color="White"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="600" VerticalAlignment="Top" Width="1003" Background="{x:Null}" IsSynchronizedWithCurrentItem="True" BorderThickness="0">
+            <TabItem Header="Make Schedule">
+                <Grid>
+                    <Grid Margin="250,0,0,0">
+                        <TextBlock HorizontalAlignment="Left" Margin="585,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="73" RenderTransformOrigin="2.412,0.3"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="كود او اسم الماده"/></TextBlock>
+                        <TextBox x:Name="courseName" HorizontalAlignment="Left" Height="23" Margin="455,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.792,0.522"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="585,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="23"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="عدد المجموعات التى يمكن التسجيل فيها"/></TextBlock>
+                        <TextBox x:Name="noOfGroups" HorizontalAlignment="Left" Height="23" Margin="455,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="585,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="147"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="اضف المجموعات بأفضليه التسجيل"/></TextBlock>
+                        <TextBlock HorizontalAlignment="Left" Margin="585,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="138"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="عدد وحدات (يونتات) الماده"/></TextBlock>
+                        <TextBox x:Name="noOfUnits" HorizontalAlignment="Left" Height="23" Margin="455,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                        <Button x:Name="add" Content="اضافه الماده للجدول" HorizontalAlignment="Left" Margin="115,442,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="-0.2,0" Height="27" Click="add_Click"/>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="517,162,0,0" Height="23" RenderTransformOrigin="1.071,0.522"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="رقم المجموعه"/></TextBlock>
+                        <TextBox x:Name="gr1" HorizontalAlignment="Left" Height="23" Margin="472,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" RenderTransformOrigin="3.3,0.391"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="386,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="22" RenderTransformOrigin="0.409,2.783"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="اليوم"/></TextBlock>
+                        <ComboBox x:Name="gr1D1" HorizontalAlignment="Left" Height="23" Margin="318,162,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.127,0.565"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="271,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" RenderTransformOrigin="1.681,0.478" Width="47"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="من الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr1D1StartPeriod" HorizontalAlignment="Left" Height="23" Margin="211,162,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.455,1.696"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="169,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="42"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="الى الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr1D1EndPeriod" HorizontalAlignment="Left" Height="23" Margin="115,162,0,0" VerticalAlignment="Top" Width="49"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="381,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="89" RenderTransformOrigin="0.409,2.783"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="اليوم الثانى (ان )وجد"/></TextBlock>
+                        <ComboBox x:Name="gr1D2" HorizontalAlignment="Left" Height="23" Margin="318,190,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.127,0.565"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="271,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" RenderTransformOrigin="1.681,0.478" Width="47"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="من الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr1D2StartPeriod" HorizontalAlignment="Left" Height="23" Margin="211,190,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.455,1.696"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="169,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="42"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="الى الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr1D2EndPeriod" HorizontalAlignment="Left" Height="23" Margin="115,190,0,0" VerticalAlignment="Top" Width="49"/>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="517,218,0,0" Height="23" RenderTransformOrigin="1.071,0.522"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="رقم المجموعه"/></TextBlock>
+                        <TextBlock HorizontalAlignment="Left" Margin="386,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="22" RenderTransformOrigin="0.409,2.783"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="اليوم"/></TextBlock>
+                        <ComboBox x:Name="gr2D1" HorizontalAlignment="Left" Height="23" Margin="318,218,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.127,0.565"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="271,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" RenderTransformOrigin="1.681,0.478" Width="47"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="من الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr2D1StartPeriod" HorizontalAlignment="Left" Height="23" Margin="211,218,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.455,1.696"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="169,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="42"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="الى الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr2D1EndPeriod" HorizontalAlignment="Left" Height="23" Margin="115,218,0,0" VerticalAlignment="Top" Width="49"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="381,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="89" RenderTransformOrigin="0.409,2.783"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="اليوم الثانى (ان )وجد"/></TextBlock>
+                        <ComboBox x:Name="gr2D2" HorizontalAlignment="Left" Height="23" Margin="318,246,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.127,0.565"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="271,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" RenderTransformOrigin="1.681,0.478" Width="47"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="من الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr2D2StartPeriod" HorizontalAlignment="Left" Height="23" Margin="211,246,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.455,1.696"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="169,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="42"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="الى الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr2D2EndPeriod" HorizontalAlignment="Left" Height="23" Margin="115,246,0,0" VerticalAlignment="Top" Width="49" RenderTransformOrigin="0.49,2.522"/>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="517,274,0,0" Height="23" RenderTransformOrigin="1.071,0.522"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="رقم المجموعه"/></TextBlock>
+                        <TextBox x:Name="gr3" HorizontalAlignment="Left" Height="23" Margin="472,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" RenderTransformOrigin="3.3,0.391"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="386,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="22" RenderTransformOrigin="0.409,2.783"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="اليوم"/></TextBlock>
+                        <ComboBox x:Name="gr3D1" HorizontalAlignment="Left" Height="23" Margin="318,274,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.127,0.565"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="271,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" RenderTransformOrigin="1.681,0.478" Width="47"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="من الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr3D1StartPeriod" HorizontalAlignment="Left" Height="23" Margin="211,274,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.455,1.696"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="169,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="42"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="الى الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr3D1EndPeriod" HorizontalAlignment="Left" Height="23" Margin="115,274,0,0" VerticalAlignment="Top" Width="49"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="381,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="89" RenderTransformOrigin="0.409,2.783"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="اليوم الثانى (ان )وجد"/></TextBlock>
+                        <ComboBox x:Name="gr3D2" HorizontalAlignment="Left" Height="23" Margin="318,302,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.127,0.565"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="271,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" RenderTransformOrigin="1.681,0.478" Width="47"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="من الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr3D2StartPeriod" HorizontalAlignment="Left" Height="23" Margin="211,302,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.455,1.696"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="169,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="42" RenderTransformOrigin="0.429,3.043"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="الى الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr3D2EndPeriod" HorizontalAlignment="Left" Height="23" Margin="115,302,0,0" VerticalAlignment="Top" Width="49" RenderTransformOrigin="0.49,2.522"/>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="517,330,0,0" Height="23" RenderTransformOrigin="1.071,0.522"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="رقم المجموعه"/></TextBlock>
+                        <TextBox x:Name="gr4" HorizontalAlignment="Left" Height="23" Margin="472,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" RenderTransformOrigin="3.3,0.391"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="386,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="22" RenderTransformOrigin="0.409,2.783"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="اليوم"/></TextBlock>
+                        <ComboBox x:Name="gr4D1" HorizontalAlignment="Left" Height="23" Margin="318,330,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.127,0.565"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="271,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" RenderTransformOrigin="1.681,0.478" Width="47"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="من الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr4D1StartPeriod" HorizontalAlignment="Left" Height="23" Margin="211,330,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.455,1.696"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="169,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="42" RenderTransformOrigin="0.476,2.957"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="الى الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr4D1EndPeriod" HorizontalAlignment="Left" Height="23" Margin="115,330,0,0" VerticalAlignment="Top" Width="49"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="386,358,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="89" RenderTransformOrigin="0.409,2.783"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="اليوم الثانى (ان )وجد"/></TextBlock>
+                        <ComboBox x:Name="gr4D2" HorizontalAlignment="Left" Height="23" Margin="318,358,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.127,0.565"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="271,358,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" RenderTransformOrigin="1.681,0.478" Width="47"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="من الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr4D2StartPeriod" HorizontalAlignment="Left" Height="23" Margin="211,358,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.455,1.696"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="169,358,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="42" RenderTransformOrigin="0.429,3.043"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="الى الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr4D2EndPeriod" HorizontalAlignment="Left" Height="23" Margin="115,358,0,0" VerticalAlignment="Top" Width="49" RenderTransformOrigin="0.49,2.522"/>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="517,386,0,0" Height="23" RenderTransformOrigin="1.071,0.522"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="رقم المجموعه"/></TextBlock>
+                        <TextBox x:Name="gr5" HorizontalAlignment="Left" Height="23" Margin="472,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" RenderTransformOrigin="3.3,0.391"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="386,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="22" RenderTransformOrigin="0.409,2.783"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="اليوم"/></TextBlock>
+                        <ComboBox x:Name="gr5D1" HorizontalAlignment="Left" Height="23" Margin="318,386,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.127,0.565"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="271,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" RenderTransformOrigin="1.681,0.478" Width="47"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="من الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr5D1StartPeriod" HorizontalAlignment="Left" Height="23" Margin="211,386,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.455,1.696"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="169,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="42" RenderTransformOrigin="0.476,2.957"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="الى الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr5D1EndPeriod" HorizontalAlignment="Left" Height="23" Margin="115,386,0,0" VerticalAlignment="Top" Width="49"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="386,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="89" RenderTransformOrigin="0.409,2.783"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="اليوم الثانى (ان )وجد"/></TextBlock>
+                        <ComboBox x:Name="gr5D2" HorizontalAlignment="Left" Height="23" Margin="318,414,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.127,0.565"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="271,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" RenderTransformOrigin="1.681,0.478" Width="47"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="من الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr5D2StartPeriod" HorizontalAlignment="Left" Height="23" Margin="211,414,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.455,1.696"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="169,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="42" RenderTransformOrigin="0.429,3.043"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="الى الفتره"/></TextBlock>
+                        <ComboBox x:Name="gr5D2EndPeriod" HorizontalAlignment="Left" Height="23" Margin="115,414,0,0" VerticalAlignment="Top" Width="49" RenderTransformOrigin="0.49,2.522"/>
+                        <Button x:Name="schedule" Content="اعرض الجداول المتاحه للتسجيل" HorizontalAlignment="Left" Margin="115,505,0,0" VerticalAlignment="Top" Width="137" Height="28" Click="schedule_Click" RenderTransformOrigin="-0.387,0.464"/>
+                        <CheckBox Content="الماده يجب ان تكون مسجله" HorizontalAlignment="Left" Margin="561,139,0,0" VerticalAlignment="Top" Height="23" Width="144"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="244,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="317"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="(لا تختارها عند اضافه المواد الثقافيه و الاداريه لاعطاء الاولويه للمواد الرئيسيه)"/></TextBlock>
+                        <TextBox x:Name="gr2" HorizontalAlignment="Left" Height="23" Margin="472,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" RenderTransformOrigin="3.3,0.391"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="472,481,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="176" RenderTransformOrigin="2.412,0.3"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="عدد الوحدات (اليونتات) التى يمكن يرغب الطالب تسجيلها او الحد الاقصى لها"/><LineBreak/><Run FlowDirection="RightToLeft" Language="ar-eg" Text="(الافتراصى 20 وحده)"/></TextBlock>
+                        <ComboBox HorizontalAlignment="Left" Height="52" Margin="439,481,0,0" VerticalAlignment="Top" Width="28" RenderTransformOrigin="0.792,0.522"/>
+                        <Button Content="ادخل عدد&#xD;&#xA;الوحدات" HorizontalAlignment="Left" Margin="381,481,0,0" VerticalAlignment="Top" Width="53" Height="52"/>
+                    </Grid>
+                    <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="406" Margin="67,77,0,0" VerticalAlignment="Top" Width="178"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="129,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Height="21"><Run FlowDirection="RightToLeft" Language="ar-eg" Text="المواد المضافه"/></TextBlock>
+                    <TextBlock x:Name="courses" HorizontalAlignment="Left" Height="406" Margin="67,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Browse Courses"/>
+            <TabItem Header="About HTI Guide">
+                <Grid/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

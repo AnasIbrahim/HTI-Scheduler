@@ -1,0 +1,13 @@
+C:\Users\User\Desktop\Projects\HTI Guide 1.0\bin\Debug\HTI Guide 1.0.exe.config
+C:\Users\User\Desktop\Projects\HTI Guide 1.0\bin\Debug\HTI Guide 1.0.exe
+C:\Users\User\Desktop\Projects\HTI Guide 1.0\bin\Debug\HTI Guide 1.0.pdb
+C:\Users\User\Desktop\Projects\HTI Guide 1.0\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\Projects\HTI Guide 1.0\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\Projects\HTI Guide 1.0\obj\Debug\App.g.cs
+C:\Users\User\Desktop\Projects\HTI Guide 1.0\obj\Debug\HTI Guide 1.0_MarkupCompile.cache
+C:\Users\User\Desktop\Projects\HTI Guide 1.0\obj\Debug\HTI Guide 1.0.g.resources
+C:\Users\User\Desktop\Projects\HTI Guide 1.0\obj\Debug\HTI_Guide_1._0.Properties.Resources.resources
+C:\Users\User\Desktop\Projects\HTI Guide 1.0\obj\Debug\HTI Guide 1.0.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\Projects\HTI Guide 1.0\obj\Debug\HTI Guide 1.0.exe
+C:\Users\User\Desktop\Projects\HTI Guide 1.0\obj\Debug\HTI Guide 1.0.pdb
+C:\Users\User\Desktop\Projects\HTI Guide 1.0\obj\Debug\HTI Guide 1.0.csprojResolveAssemblyReference.cache
